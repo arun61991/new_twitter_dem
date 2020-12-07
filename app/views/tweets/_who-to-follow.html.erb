@@ -18,7 +18,7 @@
 							<strong><%= user&.name %></strong>
 							<small>@<%= user&.username %></small>
 							<% if user_signed_in? && User.check_following?(current_user.id,user.id) %>
-								<small><a href="/follows/unfollow?user_id=<%=user.id%>">unfollow</a></small>
+								<small><a href="/follows/unfollow?user_id=<%=user.id%>" style="color:red;">unfollow</a></small>
 							<% else %>
 								<small><a href="/follows/dofollow?user_id=<%=user.id%>">follow</a></small>
 							<% end %>

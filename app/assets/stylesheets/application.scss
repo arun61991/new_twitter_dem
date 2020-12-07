@@ -30,3 +30,9 @@
 .global-notification:not(:last-child){
 	margin-bottom: 0;
 }
+
+a {
+    color: #03a8a6;
+    cursor: pointer;
+    text-decoration: none;
+}
